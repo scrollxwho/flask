@@ -4,7 +4,7 @@ import re
 app = Flask(__name__)
 app.config["SECRET_KEY"]="ASDFGHJKL"
 
-
+# функция для подключения в базу данных 
 def connect_to_db():
     connect = sqlite3.connect("store.db")
     connect.row_factory = sqlite3.Row
